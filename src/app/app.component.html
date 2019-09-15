@@ -1,0 +1,38 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu no-border>
+      <ion-header class="menu-profile">
+        <ion-grid fxLayout="column" fxLayoutAlign="space-evenly center">
+          <!-- <ion-row tappable (click)="onProfile()">
+            <ngx-avatar cornerRadius="10" [round]="false" [src]="imgSrc" [name]="username"></ngx-avatar>
+          </ion-row> -->
+
+        </ion-grid>
+
+      </ion-header>
+      <ion-content class="menu">
+        <ion-list lines="none">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item detail-none no-lines class="menuItems" [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle class="menu" auto-hide="false">
+            <!-- <ion-item detail-none no-lines class="menuItems" tappable (click)="signOut()">
+              <ion-icon slot="start" name="md-exit"></ion-icon>
+              <ion-label>
+                Logout
+              </ion-label>
+            </ion-item> -->
+          </ion-menu-toggle>
+
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,40 @@
+.menu-profile {
+    background-color: var(--ion-color-menu-avatar);
+    text-align: center;
+    padding: 2em;
+    height: 12em; //responsive?
+}
+
+.menuItems {
+    color: var(--ion-color-menu-icon);
+    font-size: medium;
+}
+
+.menu {
+    ion-list, .menuItems {
+        --background: transparent;
+        background-color: var(--ion-color-light);
+    }
+
+
+    --background: transparent;
+    background-color: var(--ion-color-light);
+    // color: var(--ion-color-menu-icon);
+}
+
+.split-pane-visible > .split-pane-side {
+    max-width: 15%;
+    // flex-grow: 15;
+}
+
+.ion-content{
+        --background: transparent;
+    background-color: var(--ion-color-bluegray);
+}
+
+// .split-pane-visible > .split-pane-main {
+//     max-width: 85%;
+//     // flex-grow: 85;
+// }
+
+

@@ -1,0 +1,6 @@
+{
+  "appId": "com.crionx.timefeature",
+  "appName": "timefeature",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
